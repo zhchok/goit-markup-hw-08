@@ -8,7 +8,7 @@
 	left: 0;
 	transform: translateY(100%);
 	width: 100%;
-	padding: 63px 24px;
+	padding: 77px 24px;
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
@@ -18,6 +18,9 @@
 	.portfolio-item:hover &,
 	.portfolio-item-link:focus & {
 		transform: translateY(0);
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 63px 24px;
 	}
 }
 .portfolio-item-link {
@@ -30,13 +33,8 @@
 	}
 }
 
-
-
 .portfolio-padding {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 24px;
-	padding-right: 24px;
+	padding: 20px 24px;
 }
 .border {
 	background: var(--primary-white-color);

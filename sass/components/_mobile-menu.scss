@@ -1,0 +1,19 @@
+.menu-button {
+	background-color: transparent;
+	display: inline-flex;
+}
+.menu-button__icon-cross {
+	display: none;
+}
+.menu-button.is-open .menu-button__icon-cross {
+	display: block;
+}
+.menu-button.is-open .menu-button__icon-menu {
+	display: none;
+}
+.menu-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}

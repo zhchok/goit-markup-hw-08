@@ -1,15 +1,30 @@
 .filters-list {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
-	// margin-bottom: 50px;
+	margin-bottom: 40px;
+	@media screen and (min-width: 1200px) {
+		justify-content: center;
+		margin-bottom: 50px;
+		flex-wrap: nowrap;
+	}
 }
 
-// .filters-item {
-// 	& + & {
-// 		margin-left: 8px;
-// 	}
-// }
+.filters-item {
+	& + & {
+		margin-left: 8px;
+		margin-bottom: 15px;
+	}
+	&:nth-last-child(-n + 2) {
+		margin-bottom: 0px;
+	}
+	// }
+	// @media screen and (min-width: 480px) and (min-width: 768px) {
+	// 	margin-bottom: 8px;
+	// 	&:nth-last-child(-n + 2) {
+	// 		margin-bottom: 0px;
+	// 	}
+	// }
+}
 .filters-button {
 	background-color: var(--second-bg-color);
 	color: var(--second-btn-color);

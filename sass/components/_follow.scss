@@ -1,5 +1,5 @@
 .follow {
-	margin-bottom: 60px;
+	margin: 0px 0px 60px 0px;
 }
 .follow__title {
 	font-weight: 700;
@@ -11,9 +11,11 @@
 	margin-bottom: 20px;
 }
 
-// .follow-list__socials {
-// 	display: flex;
-// }
+.follow-list__socials {
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
+}
 
 .socials__link_opacity {
 	background-color: rgba(255, 255, 255, 0.1);

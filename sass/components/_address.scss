@@ -1,24 +1,30 @@
 .address__wrapper {
 	margin-bottom: 60px;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+		margin-right: 70px;
+	}
 }
 
 .address-list__item {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 9px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
 }
-// .address-list__item {
-// 	margin-bottom: 9px;
-// 	&:last-child {
-// 		margin-bottom: 0px;
-// 	}
-// }
 
-// .address-list {
-// 	&:last-child {
-// 		margin-top: 0px;
-// 	}
-// }
+.address-list {
+	@media screen and (min-width: 1200px) {
+		&:last-child {
+			margin-top: 0px;
+		}
+	}
+}
 .address-list__link {
 	margin-bottom: 8px;
 	color: var(--primary-white-color);
@@ -26,6 +32,9 @@
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
+	}
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0px;
 	}
 }
 
