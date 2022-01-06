@@ -555,7 +555,6 @@ body {
 
 .header__logo {
   padding: 16px 0px 16px 0px;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -994,6 +993,7 @@ body {
 
 .modal {
   padding: 40px;
+  position: relative;
   max-width: 450px;
   height: 609px;
   background: #ffffff;
@@ -1071,6 +1071,9 @@ body {
 }
 
 .comment-text::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -1146,8 +1149,8 @@ body {
 }
 
 .agreement-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
@@ -1171,9 +1174,19 @@ body {
   background-color: #ffffff;
 }
 
+.modal-close:focus, .modal-close:hover {
+  color: var(--accent-color);
+}
+
+.icon-close {
+  fill: currentColor;
+}
+
 .open-menu {
+  top: 22px;
+  right: 23px;
+  position: absolute;
   background-color: transparent;
-  display: inline-flex;
 }
 
 .open-menu:hover, .open-menu:focus {
@@ -1186,14 +1199,11 @@ body {
   }
 }
 
-.mob-menu__container {
-  padding: 21px;
-}
-
 .mob-menu__close-btn {
   background-color: transparent;
-  display: block;
-  margin-left: auto;
+  top: 21px;
+  right: 25.33px;
+  position: absolute;
 }
 
 .mob-menu__close-btn:hover, .mob-menu__close-btn:focus {
@@ -1205,13 +1215,24 @@ body {
   fill: currentColor;
 }
 
-.mob-menu {
+.mob-menu__container {
   position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
   left: 0;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  padding: 40px;
+}
+
+.mob-menu__container.is-open {
+  transform: translateX(0);
 }
 
 .mob-menu__item {
@@ -1232,10 +1253,8 @@ body {
   color: var(--accent-color);
 }
 
-.mob-contacts {
-  display: flex;
-  margin-left: auto;
-  flex-direction: column-reverse;
+.mob-menu__link-current {
+  color: var(--accent-color);
 }
 
 .mob-contacts__item {
@@ -1266,6 +1285,25 @@ body {
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
+}
+
+.mob-socials {
+  display: flex;
+}
+
+.mob-socials__item:nth-child(-n + 3)::after {
+  content: "";
+  height: 100%;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin: 0px 10px 0px 10px;
+}
+
+.mob-socials__link {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .hero {

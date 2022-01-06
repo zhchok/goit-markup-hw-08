@@ -16,7 +16,7 @@
 }
 .modal {
 	padding: 40px;
-	// position: absolute;
+	position: relative;
 	// width: 100%;
 	max-width: 450px;
 	height: 609px;
@@ -89,6 +89,9 @@
 		border-color: var(--accent-color);
 	}
 	&::placeholder {
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.01em;
 		color: rgba(117, 117, 117, 0.5);
 	}
 }
@@ -161,8 +164,8 @@
 }
 
 .agreement-text {
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.16;
 	letter-spacing: 0.03em;
 }
 .agreement-link {
@@ -183,4 +186,11 @@
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	background-color: #ffffff;
+	&:focus,
+	&:hover {
+		color: var(--accent-color);
+	}
+}
+.icon-close {
+	fill: currentColor;
 }
