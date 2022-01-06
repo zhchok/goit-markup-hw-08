@@ -19,6 +19,9 @@
 	.portfolio-item-link:focus & {
 		transform: translateY(0);
 	}
+	@media screen and (min-width: 768px) {
+		padding: 49px 24px;
+	}
 	@media screen and (min-width: 1200px) {
 		padding: 63px 24px;
 	}
