@@ -1,34 +1,36 @@
 .follow {
-	margin: 0px 0px 60px 0px;
+   @media screen and (min-width: 480px) and (max-width: 1199px) {
+      margin: 0px 0px 60px 0px;
+   }
 }
 .follow__title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #ffffff;
-	margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #ffffff;
+   margin-bottom: 20px;
 }
 
 .follow-list__socials {
-	@media screen and (min-width: 1200px) {
-		display: flex;
-	}
+   @media screen and (min-width: 1200px) {
+      display: flex;
+   }
 }
 
 .socials__link_opacity {
-	background-color: rgba(255, 255, 255, 0.1);
+   background-color: rgba(255, 255, 255, 0.1);
 }
 .socials__link_white {
-	color: #ffffff;
+   color: #ffffff;
 }
 .socials__icon {
-	fill: currentColor;
+   fill: currentColor;
 }
 .socials__link {
-	&:hover,
-	&:focus {
-		background-color: var(--accent-color);
-	}
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
 }

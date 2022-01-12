@@ -4,6 +4,7 @@
 .header__container {
    display: flex;
    align-items: center;
+   position: relative;
 }
 .header-nav {
    @media screen and (max-width: 767.99px) {
